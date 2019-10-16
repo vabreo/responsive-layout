@@ -1,0 +1,148 @@
+@font-face{
+    font-family: "Open Source Bold";
+    src: url("../fonts/OpenSans-Bold.ttf");
+}
+@font-face{
+    font-family: "Open Source Regular";
+    src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#fff;
+    margin:0;
+}
+
+h1, h3{
+    font-family: "Open Source Bold";
+}
+
+h2, p{
+    font-family: "Open Source Regular";
+}
+
+h2, h3, p{
+    text-align:center;
+}
+
+h3{text-transform: uppercase;}
+
+p{
+    padding:.937em;
+}
+
+.p-grey{
+    color:grey;
+}
+
+header{
+    background-color:#f5f5f5;
+}
+
+.name{
+    text-align:center;
+    margin-top:0;
+    padding:1.25em;
+}
+
+.nav-container ul{
+    list-style-type:none;
+    padding:0;
+}
+
+.nav-container ul li{
+    background-color:#fff;
+    text-align: center;
+    margin-bottom:10px;
+    padding: 2.5px 0 2.5px 0;  
+}
+
+.nav-container ul li a{
+    display:inline-block;
+    width:100%;
+    text-decoration:none;
+}
+
+.center-header-content{
+    text-align:center
+}
+
+.profile-img{
+    padding: 1.25em;
+    
+}
+
+.header-space{
+    padding-bottom:3.125em;
+}
+
+.container{
+    text-align:center;
+}
+
+.portfolio-title{
+    padding:1.25em;
+}
+
+.thumbnail{
+    width:90%;
+}
+
+footer{
+    background-color:#f5f5f5;
+}
+
+.contact-title{
+    padding: 3.125em 0 1.25em 0;
+    margin: 0;
+}
+
+.info-bold{
+    font-family: "Open Source Bold";
+    margin-left:5px;
+}
+
+.hor-rule{
+    margin:0 1.25em;
+}
+
+.h3-custom-1{
+    margin-bottom:0;
+}
+
+.name-bottom{
+    float:left;
+    padding:1.25em;
+}
+
+.back-to-top{
+    float:right;
+    padding:1.25em;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  @media (min-width:768px){
+        .profile-img{
+          float:right;
+    }
+    .col{
+        justify-content:center;
+    }
+        .marketing-sec,
+        .search-sec,
+        .travel-sec,
+        .map-sec,
+        .photo-sec,
+        .calculator-sec {
+            float:left;
+            width:40%;
+        }
+  }
