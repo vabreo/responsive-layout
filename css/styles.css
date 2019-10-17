@@ -72,6 +72,7 @@ header{
 
 .profile-img{
     padding: 1.25em;
+    width:50%;
     
 }
 
@@ -123,26 +124,96 @@ footer{
     padding:1.25em;
 }
 
-.clearfix::after {
+.bottom-nav{
+    display:none;
+}
+
+  @media (min-width:768px){
+    .name{
+        padding: 1.25em 1.25em 0 1.25em;
+    }
+
+    .nav-container ul{
+        text-align:center;
+        
+    }
+
+    .nav-container ul li{
+        display:inline-block;
+        background-color:whitesmoke;
+        padding:0 25px;
+    }
+
+    .profile-img{
+        padding: 1.25em;
+        width:25%;
+        float:right;
+    }
+    .container{
+
+        
+    }
+    .marketing-sec,
+    .search-sec,
+    .travel-sec,
+    .map-sec,
+    .photo-sec,
+    .calculator-sec {
+        float:left;
+        width:50%;
+    }
+
+    .name-bottom{
+        margin:0;
+    }
+    .back-to-top{
+        display:none;
+    }
+    .bottom-nav{
+        display:inline-block;
+        float:right;
+    }
+    .bottom-nav ul{
+        text-align:right;
+        margin:0;
+    }
+    .bottom-nav ul li{
+        padding-top:10px;
+        margin-bottom:0;
+    }
+  }
+
+  @media (min-width:1024px){
+    .name{
+        float:left;
+        padding:50px;
+    }
+
+    .nav-container{
+        float:right;
+    }
+
+    .nav-container ul li{
+        margin-bottom:0;
+        padding: 0 1.56em;  
+    }
+
+    .center-header-content{
+        clear:both;
+    }
+    .marketing-sec,
+    .search-sec,
+    .travel-sec,
+    .map-sec,
+    .photo-sec,
+    .calculator-sec {
+        float:left;
+        width:33.333%;
+    }
+  }
+
+  .clearfix::after {
     content: "";
     clear: both;
     display: table;
-  }
-
-  @media (min-width:768px){
-        .profile-img{
-          float:right;
-    }
-    .col{
-        
-    }
-        .marketing-sec,
-        .search-sec,
-        .travel-sec,
-        .map-sec,
-        .photo-sec,
-        .calculator-sec {
-            float:left;
-            width:40%;
-        }
   }
